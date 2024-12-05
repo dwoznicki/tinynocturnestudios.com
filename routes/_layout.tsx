@@ -3,7 +3,7 @@ import SiteNavigationMenu from "../islands/SiteNavigationMenu.tsx";
 
 const StandardPageLayout = ({ Component }: PageProps) => {
   return (
-    <div className="p-8 flex gap-x-4">
+    <div className="p-12 flex gap-x-12">
       <aside>
         <SiteNavigationMenu />
       </aside>
