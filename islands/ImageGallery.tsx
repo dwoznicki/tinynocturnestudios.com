@@ -59,7 +59,7 @@ const imageConfigs: ImageConfig[] = [
 
 const ImageGallery = () => {
   return (
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
       {imageConfigs.map((imageConfig) => (
         <a href={imageConfig.link} key={imageConfig.alt}>
           <img
