@@ -5,7 +5,7 @@ type SiteNavigationMenuProps = {
 };
 const SiteNavigationMenu = ({ path }: SiteNavigationMenuProps) => {
   return (
-    <ul className="text-2xl uppercase flex flex-col gap-y-4 font-extralight">
+    <ul className="text-2xl uppercase flex flex-col gap-y-4 font-extralight bg-zinc-900 mt-4">
       <NavigationItem
         label="Portfolio"
         href="/"

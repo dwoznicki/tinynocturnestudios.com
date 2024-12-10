@@ -6,17 +6,36 @@ const AboutPage = ({ url }: PageProps) => {
   return (
     <PageLayout
       url={url}
-      header={<PageHeader>About</PageHeader>}
+      header={
+        <PageHeader
+          images={[
+            {
+              source: "/images/bg_flower_moon.png",
+              scale: "1.4",
+              left: "-300px",
+              top: "110px",
+            },
+            {
+              source: "/images/bg_snake.png",
+              scale: "2",
+              top: "90px",
+              right: "-340px",
+            }
+          ]}
+        >
+          About
+        </PageHeader>
+      }
     >
       <div className="flex flex-col gap-y-6">
         <div className="grid grid-cols-3 gap-x-4">
           <img src="/images/profile.jpg" alt="Artist profile picture" />
-          <div className="col-span-2">
+          <div className="col-span-2 space-y-4">
             <p>
-              The artist is a major cutie.
+              Aya Kusch is a Bay Area based ceramic artist.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vestibulum metus et venenatis placerat. Donec in vestibulum dui. Mauris quis libero ultricies nisi finibus placerat a vitae massa. Integer sapien odio, bibendum non suscipit ut, pretium sed est. Donec tincidunt, leo at rutrum viverra, felis ipsum luctus mauris, sed mattis mauris magna ut arcu. Fusce ornare aliquam nibh et posuere. Donec facilisis, mi ut tempus eleifend, felis diam gravida sem, vitae interdum massa odio at felis. Nam a mollis enim. Donec sit amet tristique ex. Morbi eget dapibus metus, sit amet placerat est. Praesent a facilisis ipsum. Nam tincidunt augue at dui interdum, vel facilisis tortor auctor. Integer porta finibus massa sit amet dignissim.
+              She is inspired by literature, tattoo art, and art made by witchy women throughout history. She earned a BFA in Interdisciplinary Studies and a minor in writing and literature at California College for the Arts. She works at a literary arts nonprofit based in San Francisco and lives with her husband and her pet rabbit. The rabbit is named Basho, and he embodies the great haiku poet in every way.
             </p>
           </div>
         </div>
