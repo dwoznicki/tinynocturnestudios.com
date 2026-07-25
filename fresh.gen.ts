@@ -9,6 +9,7 @@ import * as $about from "./routes/about.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
+import * as $PageHeader from "./islands/PageHeader.tsx";
 import * as $PieceGallery from "./islands/PieceGallery.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
@@ -23,6 +24,7 @@ const manifest = {
     "./routes/index.tsx": $index,
   },
   islands: {
+    "./islands/PageHeader.tsx": $PageHeader,
     "./islands/PieceGallery.tsx": $PieceGallery,
   },
   baseUrl: import.meta.url,

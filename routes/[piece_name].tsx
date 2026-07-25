@@ -1,5 +1,5 @@
 import { PageProps } from "$fresh/server.ts";
-import PageHeader from "../components/PageHeader.tsx";
+import PageHeader from "../islands/PageHeader.tsx";
 import PageLayout from "../components/PageLayout.tsx";
 import { pieces } from "../pieces.ts";
 

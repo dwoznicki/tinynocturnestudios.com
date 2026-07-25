@@ -5,7 +5,7 @@ type SiteNavigationMenuProps = {
 };
 const SiteNavigationMenu = ({ path }: SiteNavigationMenuProps) => {
   return (
-    <ul className="text-2xl uppercase flex flex-col gap-y-4 font-extralight bg-zinc-900 mt-4">
+    <ul className="text-xl uppercase flex gap-y-4 gap-x-4 font-extralight bg-zinc-900 mt-4 justify-center md:justify-normal md:flex-col">
       <NavigationItem
         label="Portfolio"
         href="/"
@@ -29,7 +29,7 @@ type NavigationItemProps = {
 const NavigationItem = ({ label, href, active }: NavigationItemProps) => {
   return (
     <li
-      className={clsx("pl-3 border-l-2", !active && "border-l-transparent")}
+      className={clsx("max-md:border-b-2 md:pl-3 md:border-l-2", !active && "border-transparent")}
     >
       <a href={href} className="hover:opacity-80 transition-opacity duration-200">
         {label}

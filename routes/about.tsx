@@ -1,5 +1,5 @@
 import { PageProps } from "$fresh/server.ts";
-import PageHeader from "../components/PageHeader.tsx";
+import PageHeader from "../islands/PageHeader.tsx";
 import PageLayout from "../components/PageLayout.tsx";
 
 const AboutPage = ({ url }: PageProps) => {
@@ -11,15 +11,33 @@ const AboutPage = ({ url }: PageProps) => {
           images={[
             {
               source: "/images/bg_flower_moon.png",
-              scale: "1.4",
-              left: "-300px",
-              top: "110px",
+              dimensions: {
+                sm: {
+                  scale: "1.0",
+                  left: "-140px",
+                  top: "20px",
+                },
+                md: {
+                  scale: "1.2",
+                  left: "-300px",
+                  top: "90px",
+                },
+              },
             },
             {
               source: "/images/bg_snake.png",
-              scale: "2",
-              top: "90px",
-              right: "-340px",
+              dimensions: {
+                sm: {
+                  scale: "1.5",
+                  top: "40px",
+                  right: "-160px",
+                },
+                md: {
+                  scale: "2",
+                  top: "90px",
+                  right: "-340px",
+                },
+              },
             }
           ]}
         >
@@ -28,7 +46,7 @@ const AboutPage = ({ url }: PageProps) => {
       }
     >
       <div className="flex flex-col gap-y-6">
-        <div className="grid grid-cols-3 gap-x-4">
+        <div className="max-md:flex max-md:flex-col max-md:gap-y-4 md:grid md:grid-cols-3 md:gap-x-4">
           <img src="/images/profile.jpg" alt="Artist profile picture" />
           <div className="col-span-2 space-y-4">
             <p>

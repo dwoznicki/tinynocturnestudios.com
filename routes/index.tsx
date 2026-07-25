@@ -1,5 +1,5 @@
 import { PageProps } from "$fresh/server.ts";
-import PageHeader from "../components/PageHeader.tsx";
+import PageHeader from "../islands/PageHeader.tsx";
 import PageLayout from "../components/PageLayout.tsx";
 import PieceGallery from "../islands/PieceGallery.tsx";
 
@@ -12,16 +12,34 @@ const HomePage = ({ url }: PageProps) => {
           images={[
             {
               source: "/images/bg_swallow.png",
-              scale: "0.5",
-              left: "-500px",
-              top: "-200px",
+              dimensions: {
+                sm: {
+                  scale: "0.4",
+                  left: "-200px",
+                  top: "-70px",
+                },
+                md: {
+                  scale: "0.5",
+                  left: "-500px",
+                  top: "-200px",
+                },
+              },
             },
             {
               source: "/images/bg_rose.png",
-              scale: "0.7",
-              right: "-550px",
-              top: "-70px",
-            }
+              dimensions: {
+                sm: {
+                  scale: "0.5",
+                  right: "-200px",
+                  top: "-20px",
+                },
+                md: {
+                  scale: "0.7",
+                  right: "-550px",
+                  top: "-70px",
+                },
+              },
+            },
           ]}
         >
           Tiny Nocturne Studios
