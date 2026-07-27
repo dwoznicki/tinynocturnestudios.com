@@ -11,138 +11,78 @@ export type ImageConfig = {
 
 export const pieces: PieceConfig[] = [
   {
-    name: "moon",
-    title: "Moon",
+    name: "mini_vase",
+    title: "Mini Vase",
     images: [
       {
-        source: "/images/MOON 1.jpg",
-        alt: ""
-      },
-      {
-        source: "/images/MOON 2.jpg",
-        alt: ""
-      },
-      {
-        source: "/images/MOON 3.jpg",
-        alt: ""
+        source: "/images/mini vase.jpg",
+        alt:
+          "Small black vase hand-painted with a blue flower, holding dried lavender",
       },
     ],
   },
   {
-    name: "peony",
-    title: "Peony",
+    name: "mini_vase_w_bear_1",
+    title: "Mini Vase w Bear 1",
     images: [
       {
-        source: "/images/PEONY 1.jpg",
-        alt: ""
-      },
-      {
-        source: "/images/PEONY 2.jpg",
-        alt: ""
-      },
-      {
-        source: "/images/PEONY 3.jpg",
-        alt: ""
+        source: "/images/mini vase w bear 1.jpg",
+        alt:
+          "The mini vase beside a small black bear figurine painted with white stars",
       },
     ],
   },
   {
-    name: "peony_blue",
-    title: "Peony blue",
+    name: "mini_vase_w_bear_2",
+    title: "Mini Vase w Bear 2",
     images: [
       {
-        source: "/images/PEONY BLUE 1.jpg",
-        alt: ""
-      },
-      {
-        source: "/images/PEONY BLUE 2.jpg",
-        alt: ""
-      },
-      {
-        source: "/images/PEONY BLUE 3.jpg",
-        alt: ""
+        source: "/images/mini vase w bear 2.jpg",
+        alt: "The mini vase and the star-painted bear seen from another angle",
       },
     ],
   },
   {
-    name: "snake",
-    title: "Snake",
+    name: "2_bears",
+    title: "2 Bears",
     images: [
       {
-        source: "/images/SNAKE 1.jpg",
-        alt: ""
-      },
-      {
-        source: "/images/SNAKE 2.jpg",
-        alt: ""
-      },
-      {
-        source: "/images/SNAKE 3.jpg",
-        alt: ""
+        source: "/images/2 bears.jpg",
+        alt:
+          "Two small black bear figurines side by side, the larger one painted with white stars",
       },
     ],
   },
   {
-    name: "sprig",
-    title: "Sprig",
+    name: "1_vase",
+    title: "1 Vase",
     images: [
       {
-        source: "/images/SPRIG 1.jpg",
-        alt: ""
-      },
-      {
-        source: "/images/SPRIG 2.jpg",
-        alt: ""
-      },
-      {
-        source: "/images/SPRIG 3.jpg",
-        alt: ""
+        source: "/images/1 vase.jpg",
+        alt:
+          "Slim black bud vase painted with a white and blue flower, holding a single dried stem",
       },
     ],
   },
   {
-    name: "swallow",
-    title: "Swallow",
+    name: "1_bear",
+    title: "1 Bear",
     images: [
       {
-        source: "/images/SWALLOW 1.jpg",
-        alt: ""
-      },
-      {
-        source: "/images/SWALLOW 2.jpg",
-        alt: ""
-      },
-      {
-        source: "/images/SWALLOW 3.jpg",
-        alt: ""
+        source: "/images/1 bear.jpg",
+        alt:
+          "Small black bear figurine flecked with pale speckles, seen from behind",
       },
     ],
   },
   {
-    name: "teeth",
-    title: "Teeth",
+    name: "lonely_vase",
+    title: "Lonely Vase",
     images: [
       {
-        source: "/images/TEETH 1.jpg",
-        alt: ""
-      },
-      {
-        source: "/images/TEETH 2.jpg",
-        alt: ""
-      },
-    ],
-  },
-  {
-    name: "teeth_sake",
-    title: "Teeth Sake",
-    images: [
-      {
-        source: "/images/TEETH SAKE 1.jpg",
-        alt: ""
-      },
-      {
-        source: "/images/TEETH SAKE 2.jpg",
-        alt: ""
+        source: "/images/lonely vase.jpg",
+        alt:
+          "Rounded black bud vase painted with a pale blue flower, holding dried lavender and grass",
       },
     ],
   },

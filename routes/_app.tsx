@@ -11,7 +11,11 @@ export default function App({ Component }: PageProps) {
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="/styles.css" />
       </head>
-      <body className="bg-zinc-900 text-zinc-50 font-manrop">
+      {/*
+        The menu island records which section the reader is in on `data-section`,
+        which lets the whole page shift palette when they reach the about part.
+      */}
+      <body className="bg-zinc-800 text-zinc-50 font-manrop transition-colors duration-1000 ease-[cubic-bezier(0.45,0,0.55,1)] data-[section=about]:bg-slate-300 data-[section=about]:text-slate-900">
         <Component />
       </body>
     </html>

@@ -11,6 +11,7 @@ import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $PageHeader from "./islands/PageHeader.tsx";
 import * as $PieceGallery from "./islands/PieceGallery.tsx";
+import * as $SiteNavigationMenu from "./islands/SiteNavigationMenu.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -26,6 +27,7 @@ const manifest = {
   islands: {
     "./islands/PageHeader.tsx": $PageHeader,
     "./islands/PieceGallery.tsx": $PieceGallery,
+    "./islands/SiteNavigationMenu.tsx": $SiteNavigationMenu,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
